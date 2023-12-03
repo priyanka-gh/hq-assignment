@@ -21,7 +21,7 @@ const Index = () => {
         </button>
         <h5 className='text-[16px]'>Milton</h5>
       </div>
-      <div className='flex justify-around items-center sm:hidden xl:hidden w-[80%]'>
+      <div className='flex justify-around items-center sm:hidden xl:hidden w-[80%] ml-[7.5rem]'>
         <div className='tabs flex flex-row lg:flex-row lg:justify-evenly gap-[40px] text-[#6B6B78] font-bold lg:flex'>
           <h5 className='hover:text-black hover:underline hover:underline-offset-4'>Features</h5>
           <h5 className='hover:text-black hover:underline hover:underline-offset-4'>Testimonial</h5>

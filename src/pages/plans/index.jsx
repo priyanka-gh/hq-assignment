@@ -122,7 +122,7 @@ const Index = () => {
           </ul>
           </div>
         </div>
-        {cardData.type == "Starter" && <h4 className="relative h-min bg-black text-white max-w-fit z-20 py-[8px] px-[12px] rounded-[24px] bottom-[35rem] left-[12rem] text-[12px]">Best Deal🔥</h4>}
+        {cardData.type == "Starter" && <h4 className="relative h-min bg-[#2e2e2e] text-white max-w-fit z-20 py-[6px] px-[14px] rounded-[24px] bottom-[35rem] left-[12rem] text-[14px] font-medium">Best Deal 🔥</h4>}
       </div>
     );
   };
@@ -147,8 +147,8 @@ const Index = () => {
           <button
             className={`w-[12rem] py-[8px] px-[24px] font-semibold ${
               billingFrequency === "monthly"
-                ? "bg-white rounded-[12px] shadow-custom"
-                : "bg-[#f3f3f3]"
+                ? "bg-white rounded-[12px] shadow-custom text-[#2e2e2e]"
+                : "bg-[#f3f3f3] text-[#90909E]"
             }
             xl:max-w-[6rem]
             sm:max-w-[6rem]`}
@@ -159,8 +159,8 @@ const Index = () => {
           <button
             className={`w-[12rem] py-[8px] px-[24px] font-semibold ${
               billingFrequency === "annually"
-                ? "bg-white rounded-[12px] shadow-custom"
-                : "bg-[#f3f3f3]"
+                ? "bg-white rounded-[12px] shadow-custom text-[#2e2e2e]"
+                : "bg-[#f3f3f3] text-[#90909E] "
             }
             xl:max-w-[6rem]
             sm:max-w-[6rem]`}

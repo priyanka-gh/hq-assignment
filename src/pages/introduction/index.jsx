@@ -18,7 +18,7 @@ const Index = () => {
   }
 
   return (
-    <div data-aos="fade-up" data-aos-duration="300" className="flex flex-col items-center justify-center mt-[10rem] mb-[5rem] w-[703px] 
+    <div data-aos="zoom-in-up" data-aos-duration="300" className="flex flex-col items-center justify-center mt-[10rem] mb-[5rem] w-[703px] 
       xl:w-[600px] 
       sm:w-[550px] font-plus-jakarta-sans">
       <h5 className="text-[16px] bg-[#F1F2F4] rounded-[100px] min-w-fit text-center font-bold py-[3px] px-[16px] 
