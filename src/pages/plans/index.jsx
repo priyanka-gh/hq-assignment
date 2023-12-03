@@ -63,7 +63,7 @@ const Index = () => {
 
 
     return (
-      <div  className={`rounded-[12px]  p-4 shadow-md  p-[32px] bg-white w-[24rem] h-[90vh] font-plus-jakarta-sans 
+      <div  className={`rounded-[12px]  p-4 shadow-md  p-[32px] bg-white w-[24rem] max-h-fit font-plus-jakarta-sans 
         xxl:w-[90vw] xxl:h-fit
         xl:w-[90vw] xl:h-fit
         sm:w-[90vw] sm:h-fit`}>
