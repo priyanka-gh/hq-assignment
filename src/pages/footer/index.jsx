@@ -4,7 +4,7 @@ import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
 
 const index = () => {
   return (
-    <div className='grid grid-cols-4 bg-[#f1f2f4] w-full mt-[13rem] px-[10.5rem] py-[4rem] font-plus-jakarta-sans 
+    <div className='grid grid-cols-4 bg-[#f1f2f4] w-full mt-[13rem] px-[10.5rem] py-[2rem] font-plus-jakarta-sans 
       xxl:px-[2rem]
       xl:flex xl:flex-col xl:px-[40px] xl:gap-[24px] 
       sm:flex sm:flex-col sm:px-[40px] sm:gap-[24px]'>
@@ -46,7 +46,7 @@ const index = () => {
             <h5 className='text-[#6b6b78] text-[16px]'>Press</h5>
         </div>
       </div>
-      <div className='
+      <div className='gap-[5px]
         xl:flex xl:flex-col xl:gap-[10px]
         sm:flex sm:flex-col sm:gap-[10px]'>
         <h3 className='text-[20px] font-bold text-[#2d2d2d] mb-[1rem]'>From the blog</h3>
