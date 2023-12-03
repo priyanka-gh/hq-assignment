@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarDays, faStar } from "@fortawesome/free-solid-svg-icons";
 import hoverImg from "../images/svg.png"
 import { useState } from "react";
+import "./index.css"
 
 const Index = () => {
 
@@ -17,7 +18,7 @@ const Index = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center mt-[10rem] mb-[5rem] w-[703px]  font-plus-jakarta-sans">
+    <div className="flex flex-col items-center justify-center mt-[10rem] mb-[5rem] w-[703px]  font-plus-jakarta-sans  slide-in">
       <h5 className="text-[16px] bg-[#F1F2F4] rounded-[100px] min-w-fit text-center font-bold py-[3px] px-[16px]">
         An other way to manage time
       </h5>

@@ -7,7 +7,9 @@ import Plans from "../../pages/plans/index"
 import Faq from "../../pages/faq/index"
 import Footer from "../../pages/footer/index"
 
+
 const index = () => {
+  
   return (
     <div className='flex flex-col items-center justify-center'>
         <Introduction/>

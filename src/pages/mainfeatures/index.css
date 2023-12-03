@@ -1,0 +1,9 @@
+[data-aos="rotate-ac"] {
+    transform: rotate(270deg);
+    transition-property: transform;
+  }
+  
+  [data-aos="rotate-ac"].aos-animate {
+    transform: rotate(360deg);
+  }
+  
