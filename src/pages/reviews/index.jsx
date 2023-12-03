@@ -1,89 +1,11 @@
-// import React, { useState, useEffect, useRef, useCallback } from 'react';
-// import { faFaceGrinHearts } from "@fortawesome/free-solid-svg-icons";
-// import { useSpring, animated, config } from 'react-spring';
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faCalendarDays, faStar } from "@fortawesome/free-solid-svg-icons";
-
-// const testimonials = [
-//   {
-//     id: 1,
-//     text: "This calendar app has been a lifesaver! I used to forget important events, but now I'm always on top of my schedule.",
-//     author: "Adam Moore",
-//     role: "Entrepreneur",
-//   },
-//   {
-//     id: 2,
-//     text: "This calendar app has been a lifesaver! I used to forget important events, but now I'm always on top of my schedule.",
-//     author: "Adam Moore",
-//     role: "Entrepreneur",
-//   },{
-//     id: 3,
-//     text: "This calendar app has been a lifesaver! I used to forget important events, but now I'm always on top of my schedule.",
-//     author: "Adam Moore",
-//     role: "Entrepreneur",
-//   },{
-//     id: 4,
-//     text: "This calendar app has been a lifesaver! I used to forget important events, but now I'm always on top of my schedule.",
-//     author: "Adam Moore",
-//     role: "Entrepreneur",
-//   },
-// ];
-
-// const Testimonial = ({ testimonial, style }) => {
-//   return (
-//     <animated.div className='w-[400px]' style={style}>
-//       <div>
-//         <div>
-//           <img alt='hi' />
-//           <h5>“Just love it”</h5>
-//         </div>
-//         <div className="flex gap-[0.25rem] ">
-//           <FontAwesomeIcon icon={faStar} className="text-[#FEC84B]" />
-//           <FontAwesomeIcon icon={faStar} className="text-[#FEC84B]" />
-//           <FontAwesomeIcon icon={faStar} className="text-[#FEC84B]" />
-//           <FontAwesomeIcon icon={faStar} className="text-[#FEC84B]" />
-//           <FontAwesomeIcon icon={faStar} className="text-[#FEC84B]" />
-//         </div>
-//       </div>
-//       <div>
-//         <p>{testimonial.text}</p>
-//       </div>
-//       <div>
-//         <h4>{testimonial.author}</h4>
-//         <h4>{testimonial.role}</h4>
-//       </div>
-//     </animated.div>
-//   );
-// };
-
-// const TestimonialCarousel = () => {
-//   const [index, setIndex] = useState(0);
-
-//   const props = useSpring({
-//     transform: `translateX(${-index * 400}px)`,
-//     config: { ...config.default, duration: 6000 }, // Adjust duration for the desired speed
-//     onRest: () => setIndex((prevIndex) => (prevIndex + 1) % testimonials.length),
-//   });
-
-//   return (
-//     <div className="w-[1500px] overflow-hidden">
-//       <animated.div className='flex gap-[2rem]' style={props}>
-//         {testimonials.map((testimonial, i) => (
-//           <Testimonial key={testimonial.id} testimonial={testimonial} style={{ marginRight: i === testimonials.length - 1 ? 0 : '2rem' }} />
-//         ))}
-//       </animated.div>
-//     </div>
-//   );
-// };
-
-// export default TestimonialCarousel;
-
-import React from 'react';
+import React,{useEffect} from 'react';
 import Marquee from "react-fast-marquee";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarDays, faStar } from "@fortawesome/free-solid-svg-icons";
 
+
 const TestimonialMarquee = () => {
+
   const testimonial1 = [
     {
       id: 1,
@@ -296,9 +218,13 @@ const TestimonialMarquee = () => {
   return (
       <div className='w-[98vw] font-plus-jakarta-sans mt-[8rem] flex flex-col items-center'>
       <div data-aos="fade-up" data-aos-duration="300" className='flex flex-col text-[16px] bg-[#F1F2F4] rounded-[100px] min-w-fit text-center font-bold py-[12px] px-[24px] gap-[10px]'>
-            <h5 className="font-bold">They already love our products 😍</h5>
+            <h5 className="font-bold
+              xl:text-[12px] 
+              sm:text-[12px]">They already love our products 😍</h5>
       </div>
-      <h1 data-aos="fade-up" data-aos-duration="300" className='text-[56px] font-extrabold  mb-[4rem]'>See what our users say about us</h1>
+      <h1 data-aos="fade-up" data-aos-duration="300" className='text-[56px] font-extrabold  mb-[4rem]
+        xl:text-[32px] 
+        sm:text-[24px]'>See what our users say about us</h1>
       <Marquee gradientWidth={300} gradientHeight={200} marqueeOnHover={true} pauseOnHover={true} speed={40}  direction={'right'}>
       <div className='flex mb-[2rem]'>
       {testimonial1.map((testimonial) => (

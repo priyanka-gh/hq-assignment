@@ -1,23 +1,10 @@
-// import React from 'react'
-
-// const index = () => {
-//   return (
-//     <div className='flex flex-col items-center w-[1250px] font-plus-jakarta-sans'>
-//       <div className='flex text-[16px] bg-[#F1F2F4] rounded-[100px] min-w-fit text-center font-bold py-[12px] px-[24px] gap-[10px] mt-[16rem] items-center'>
-//         <h5 className="font-bold ">Relevant stuff, bla bla 📣</h5>
-//       </div>
-//       <h1 className='text-[56px] font-bold'>Frequently asked questions</h1>
-//     </div>
-//   )
-// }
-
-// export default index
-
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinusCircle, faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 
+
 const index = () => {
+  
   const faqData = [
     {
       id: 1,
@@ -54,12 +41,19 @@ const index = () => {
     };
 
     return (
-      <div className="bg-[#f1f2f4] rounded-[12px] p-[24px] my-4 w-[60vw] font-plus-jakarta-sans">
+      <div className="bg-[#f1f2f4] rounded-[12px] p-[24px] my-4 w-[60vw] font-plus-jakarta-sans 
+        xxl:w-[85vw]
+        xl:w-[80vw]
+        sm:w-[80vw]">
         <div className="flex justify-between items-center cursor-pointer" onClick={toggleAnswer}>
-          <h2 className="text-[20px] font-bold mb-2">{question}</h2>
+          <h2 className="text-[20px] font-bold mb-2 
+            xl:text-[20px] 
+            sm:text-[14px]">{question}</h2>
           <FontAwesomeIcon color={showAnswer ? "#90909e66" : "#90909e66"} icon={showAnswer ? faMinusCircle : faPlusCircle} className="text-[24px]"/>
         </div>
-        {showAnswer && <p className="text-gray-600">{answer}</p>}
+        {showAnswer && <p className="text-gray-600
+          xl:text-[20px] 
+          sm:text-[14px]">{answer}</p>}
       </div>
     );
   };
@@ -67,24 +61,34 @@ const index = () => {
   return (
     <div className="flex flex-col items-center font-plus-jakarta-sans">
       <div data-aos="fade-up" data-aos-duration="300" className='flex text-[16px] bg-[#F1F2F4] rounded-[100px] min-w-fit text-center font-bold py-[12px] px-[24px] gap-[10px] mt-[13rem] items-center'>
-        <h5 className="font-bold ">Relevant stuff, bla bla 📣</h5>
+        <h5 className="font-bold 
+          xl:text-[12px] 
+          sm:text-[12px]">Relevant stuff, bla bla 📣</h5>
       </div>
-      <h1  data-aos="fade-up" data-aos-duration="300" className='text-[56px] font-bold mb-[3rem]'>Frequently asked questions</h1>
+      <h1  data-aos="fade-up" data-aos-duration="300" className='text-[56px] font-bold mb-[3rem] self-center
+        xl:text-[32px] xl:self-center
+        sm:text-[24px] sm:self-center'>Frequently asked questions</h1>
       <div>
       {faqData.map((item) => (
         <FaqCard key={item.id} id={item.id} question={item.question} answer={item.answer} />
       ))}
       </div>
       <div data-aos="fade-up" data-aos-duration="300" className='flex text-[16px] bg-[#F1F2F4] rounded-[100px] min-w-fit text-center font-bold py-[12px] px-[24px] gap-[10px] mt-[12rem] items-center'>
-        <h5 className="font-bold ">Last call Baby! 🚀</h5>
+        <h5 className="font-bold 
+          xl:text-[12px] 
+          sm:text-[12px]">Last call Baby! 🚀</h5>
       </div>
-      <h1 data-aos="fade-up" data-aos-duration="300" className='text-[56px] font-bold mb-[2rem] text-[#2d2d2d]'>Ready to start?</h1>
-      <p data-aos="fade-up" data-aos-duration="300" className="text-[#6b6b78] w-[40vw] text-[20px] text-center self-center">Here is your last chance to explain how cool your app is. Focus on the benefits for your users, not on the features. </p>
+      <h1 data-aos="fade-up" data-aos-duration="300" className='text-[56px] font-bold mb-[2rem] text-[#2d2d2d]
+        xl:text-[32px] 
+        sm:text-[24px]'>Ready to start?</h1>
+      <p data-aos="fade-up" data-aos-duration="300" className="text-[#6b6b78] w-[40vw] text-[20px] text-center self-center
+        xl:text-[16px] 
+        sm:text-[16px]">Here is your last chance to explain how cool your app is. Focus on the benefits for your users, not on the features. </p>
       <button data-aos="fade-up" data-aos-duration="300" className="py-[16px] px-[32px] rounded-[12px] mt-[1rem] mb-[4px] bg-[#2e2e2e] text-white hover:scale-[110%] duration-500">
         Get started, it's free
       </button>
 
-      <div className='flex mt-[2rem] justify-start'>
+      <div className='flex mt-[2rem] justify-start xxl:justify-center'>
           <div className='relative bottom-[-90px]'>
               <img src="https://framerusercontent.com/images/BRu6MhHhp9NjldqU9TTCEAEoGKg.png" className="w-[84px]" alt="" />
           </div>

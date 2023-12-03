@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Index = () => {
+
   const data = [
     {
       "id": 1,
@@ -51,11 +52,18 @@ const Index = () => {
 
   return (
     <div className='flex flex-col items-center w-[1250px] font-plus-jakarta-sans'>
-      <div data-aos="fade-up" data-aos-duration="300" className='flex text-[16px] bg-[#F1F2F4] rounded-[100px] min-w-fit text-center font-bold py-[12px] px-[24px] gap-[10px] mt-[16rem] items-center'>
-        <h5 className="font-bold ">And so much more... 💼</h5>
+      <div data-aos="fade-up" data-aos-duration="300" className='flex text-[16px] bg-[#F1F2F4] rounded-[100px] min-w-fit text-center font-bold py-[12px] px-[24px] gap-[10px] mt-[13rem] items-center'>
+        <h5 className="font-bold 
+          xl:text-[12px] 
+          sm:text-[12px]">And so much more... 💼</h5>
       </div>
-      <h1 data-aos="fade-up" data-aos-duration="300" className=' font-extrabold text-[56px]'>Our features to make your life easier</h1>
-      <div className="flex mt-8 grid grid-cols-3 w-[100%]">
+      <h1 data-aos="fade-up" data-aos-duration="300" className=' font-extrabold text-[56px]
+          xl:text-[12px] 
+          sm:text-[24px]'>Our features to make your life easier</h1>
+      <div className="flex mt-8 grid grid-cols-3 w-[100%] 
+        xxl:flex xxl:flex-col xxl:items-center
+        xl:flex xl:flex-col xl:items-center
+        sm:flex sm:flex-col sm:items-center">
         {data.map((item, index) => (
           <div data-aos="fade-up" data-aos-duration="300" key={item.id} className={`flex flex-col items-center w-[25rem] mb-[4rem]`}>
             <div className='bg-[#f1f2f4] h-[17rem] w-[25rem] flex items-center justify-center  rounded-[24px]'>

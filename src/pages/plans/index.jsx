@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Index = () => {
+
   const [billingFrequency, setBillingFrequency] = useState("monthly");
 
   const handleSelect = (frequency) => {
@@ -60,10 +61,12 @@ const Index = () => {
         ? "bg-[#fee9cb]"
         : "bg-[#fdded6]";
 
-        // {cardData.type == "Starter" && <h4 className="relative h-min bg-black text-white max-w-fit z-20 py-[8px] px-[12px] rounded-[24px] left-[-15rem] text-[12px]">Best Deal🔥</h4>}
 
     return (
-      <div  data-aos="fade-up" data-aos-duration="300" className={`rounded-[12px]  p-4 shadow-md  p-[32px] bg-white w-[24rem] h-[90vh] font-plus-jakarta-sans`}>
+      <div  className={`rounded-[12px]  p-4 shadow-md  p-[32px] bg-white w-[24rem] h-[90vh] font-plus-jakarta-sans 
+        xxl:w-[90vw] xxl:h-fit
+        xl:w-[90vw] xl:h-fit
+        sm:w-[90vw] sm:h-fit`}>
         <h2 className={`text-[#333333]  font-bold py-[12px] px-[24px] rounded-[24px] w-min ${backgroundColor}`}>{cardData.type}</h2>
         <p className={`text-[#6b6b78] font-normal mt-[8px]`}>{cardData.text}</p>
         <p className="text-[56px] font-bold mt-2">{cardData.price}<span className="text-[#79797a] text-[16px]">/mo.</span></p>
@@ -119,24 +122,36 @@ const Index = () => {
           </ul>
           </div>
         </div>
+        {cardData.type == "Starter" && <h4 className="relative h-min bg-black text-white max-w-fit z-20 py-[8px] px-[12px] rounded-[24px] bottom-[35rem] left-[12rem] text-[12px]">Best Deal🔥</h4>}
       </div>
     );
   };
   
   return (
     <div className="flex flex-col items-center  font-plus-jakarta-sans mt-[12rem]">
-      <div className="flex text-[16px] bg-[#F1F2F4] rounded-[100px] min-w-fit text-center font-bold py-[12px] px-[24px] gap-[10px] items-center">
-        <h5 className="font-bold ">Pricing and plans 💰</h5>
+      <div data-aos="fade-up" data-aos-duration="300" className="flex text-[16px] bg-[#F1F2F4] rounded-[100px] min-w-fit text-center font-bold py-[12px] px-[24px] gap-[10px] items-center">
+        <h5 className="font-bold 
+        xl:text-[12px] 
+          sm:text-[12px]  xl:text-[12px] 
+          sm:text-[12px]">Pricing and plans 💰</h5>
       </div>
-      <h1  className="text-[56px] font-extrabold">Find the best plan for your needs</h1>
-      <div className="mb-[4rem] flex items-center gap-[10px] mt-[5rem]">
-        <div className="bg-[#f3f3f3] flex gap-[12px] p-[4px] text-[14px] rounded-[12px]">
+      <h1  data-aos="fade-up" data-aos-duration="300" className="text-[56px] font-extrabold
+        xl:text-[32px] 
+        sm:text-[24px] sm:mx-[1rem]">Find the best plan for your needs</h1>
+      <div  data-aos="fade-up" data-aos-duration="300" className="mb-[4rem] flex items-center gap-[10px] mt-[5rem]
+        sm:w-min
+        sm:flex
+        sm:flex-col">
+        <div className="bg-[#f3f3f3] flex gap-[12px] p-[4px] text-[14px] rounded-[12px]
+          sm:max-w-[13rem]">
           <button
             className={`w-[12rem] py-[8px] px-[24px] font-semibold ${
               billingFrequency === "monthly"
                 ? "bg-white rounded-[12px] shadow-custom"
                 : "bg-[#f3f3f3]"
-            }`}
+            }
+            xl:max-w-[6rem]
+            sm:max-w-[6rem]`}
             onClick={() => handleSelect("monthly")}
           >
             Monthly
@@ -146,7 +161,9 @@ const Index = () => {
               billingFrequency === "annually"
                 ? "bg-white rounded-[12px] shadow-custom"
                 : "bg-[#f3f3f3]"
-            }`}
+            }
+            xl:max-w-[6rem]
+            sm:max-w-[6rem]`}
             onClick={() => handleSelect("annually")}
           >
             Annually
@@ -155,7 +172,10 @@ const Index = () => {
         <h6>✨ save 30%</h6>
       </div>
 
-      <div  className="flex space-x-4 rounded-full">
+      <div  data-aos="fade-up" data-aos-duration="300" className="flex space-x-4 rounded-full 
+        xxl:flex xxl:flex-col xxl:gap-[2rem] xxl:space-x-0
+        xl:flex xl:flex-col xl:gap-[2rem] xl:space-x-0
+        sm:flex sm:flex-col sm:gap-[2rem] sm:space-x-0">
         {card1.map((cardData, index) => (
           <>
           <Card key={index} cardData={cardData} />
