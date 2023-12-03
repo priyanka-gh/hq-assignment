@@ -50,10 +50,12 @@ const index = () => {
         xl:flex xl:flex-col xl:gap-[10px]
         sm:flex sm:flex-col sm:gap-[10px]'>
         <h3 className='text-[20px] font-bold text-[#2d2d2d] mb-[1rem]'>From the blog</h3>
-        <a className='text-[#6b6b78] text-[16px] hover:text-black hover:underline hover:underline-offset-4'>Mastering Your Schedule: Top Time Management Techniques for Balancing Work and Life</a><br/>
-        <a className='text-[#6b6b78] text-[16px] hover:text-black hover:underline hover:underline-offset-4'>Organizing Your Calendar for Enhanced Productivity and Focus</a><br/>
-        <a className='text-[#6b6b78] text-[16px] hover:text-black hover:underline hover:underline-offset-4'>The Power of Prioritization: Effective Strategies for Managing Your Time and Tasks</a><br/>
-        <a className='text-[#6b6b78] text-[16px] hover:text-black hover:underline hover:underline-offset-4'>Maximizing Your Minutes: Essential Tips for Streamlining Your Daily Routine and Calendar</a><br/>
+        <div className='flex flex-col gap-[5px]'>
+          <h5 className='text-[#6b6b78] text-[16px] hover:text-black hover:underline hover:underline-offset-4'>Mastering Your Schedule: Top Time Management Techniques for Balancing Work and Life</h5><br/>
+          <h5 className='text-[#6b6b78] text-[16px] hover:text-black hover:underline hover:underline-offset-4'>Organizing Your Calendar for Enhanced Productivity and Focus</h5><br/>
+          <h5 className='text-[#6b6b78] text-[16px] hover:text-black hover:underline hover:underline-offset-4'>The Power of Prioritization: Effective Strategies for Managing Your Time and Tasks</h5><br/>
+          <h5 className='text-[#6b6b78] text-[16px] hover:text-black hover:underline hover:underline-offset-4'>Maximizing Your Minutes: Essential Tips for Streamlining Your Daily Routine and Calendar</h5><br/>
+        </div>
       </div>
     </div>
   );
