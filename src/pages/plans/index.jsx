@@ -77,49 +77,34 @@ const Index = () => {
           <h3 className="text-lg text-[#333333] text-[16px] mt-[26px]">{cardData.title}</h3>
           <div>
           <ul className="flex flex-col gap-3 text-[#6b6b78] mt-[8px]">
-          <div className="flex gap-4">
-            <div
-            dangerouslySetInnerHTML={{__html: tick}}
-            className="h-[24px]"
-            />
-            <li>{cardData.data1}</li>
-          </div>
-          <div className="flex gap-4">
-            <div
-            dangerouslySetInnerHTML={{__html: tick}}
-            className="h-[24px]"
-            />
-            <li>{cardData.data2}</li>
-          </div>
-          <div className="flex gap-4">
-            <div
-            dangerouslySetInnerHTML={{__html: tick}}
-            className="h-[24px]"
-            />
-            <li>{cardData.data3}</li>
-          </div>
-          <div className="flex gap-4">
-            <div
-            dangerouslySetInnerHTML={{__html: tick}}
-            className="h-[24px]"
-            />
-            <li>{cardData.data4}</li>
-          </div>
-          <div className="flex gap-4">
-            <div
-            dangerouslySetInnerHTML={{__html: tick}}
-            className="h-[24px]"
-            />
-            <li>{cardData.data5}</li>
-          </div>
-          { cardData.data6 && <div className="flex  gap-4">
-            <div
-            dangerouslySetInnerHTML={{__html: tick}}
-            className="h-[24px]"
-            />
-            <li>{cardData.data6}</li>
-          </div>}
+            <div className="flex gap-4" style={{ alignItems: 'flex-start' }}>
+              <div dangerouslySetInnerHTML={{ __html: tick }} className="h-[24px]" />
+              <li>{cardData.data1}</li>
+            </div>
+            <div className="flex gap-4" style={{ alignItems: 'flex-start' }}>
+              <div dangerouslySetInnerHTML={{ __html: tick }} className="h-[24px]" />
+              <li>{cardData.data2}</li>
+            </div>
+            <div className="flex gap-4" style={{ alignItems: 'flex-start' }}>
+              <div dangerouslySetInnerHTML={{ __html: tick }} className="h-[24px]" />
+              <li>{cardData.data3}</li>
+            </div>
+            <div className="flex gap-4" style={{ alignItems: 'flex-start' }}>
+              <div dangerouslySetInnerHTML={{ __html: tick }} className="h-[24px]" />
+              <li>{cardData.data4}</li>
+            </div>
+            <div className="flex gap-4" style={{ alignItems: 'flex-start' }}>
+              <div dangerouslySetInnerHTML={{ __html: tick }} className="h-[24px]" />
+              <li>{cardData.data5}</li>
+            </div>
+            {cardData.data6 && (
+              <div className="flex gap-4" style={{ alignItems: 'flex-start' }}>
+                <div dangerouslySetInnerHTML={{ __html: tick }} className="h-[24px]" />
+                <li>{cardData.data6}</li>
+              </div>
+            )}
           </ul>
+
           </div>
         </div>
         {cardData.type == "Starter" && <h4 className="relative h-min bg-[#2e2e2e] text-white max-w-fit z-20 py-[6px] px-[14px] rounded-[24px] bottom-[35rem] left-[12rem] text-[14px] font-medium">Best Deal 🔥</h4>}
