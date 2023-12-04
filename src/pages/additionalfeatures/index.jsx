@@ -51,26 +51,35 @@ const Index = () => {
   ];
 
   return (
-    <div className='flex flex-col items-center w-[1250px] font-plus-jakarta-sans'>
+    <div className='flex flex-col items-center w-[1250px] font-plus-jakarta-sans text-black
+    xxl:w-fit  
+    xl:w-fit
+      sm:w-fit'>
       <div data-aos="fade-up" data-aos-duration="300" className='flex text-[16px] bg-[#F1F2F4] rounded-[100px] min-w-fit text-center font-bold py-[12px] px-[24px] gap-[10px] mt-[13rem] items-center'>
         <h5 className="font-bold 
           xl:text-[12px] 
           sm:text-[12px]">And so much more... 💼</h5>
       </div>
-      <h1 data-aos="fade-up" data-aos-duration="300" className=' font-extrabold text-[56px]
-          xl:text-[12px] 
-          sm:text-[24px]'>Our features to make your life easier</h1>
+      <h1 data-aos="fade-up" data-aos-duration="300" className='font-extrabold text-[56px]
+          xl:text-[24px] 
+          sm:text-[14px]'>Our features to make your life easier</h1>
       <div className="flex mt-8 grid grid-cols-3 w-[100%] 
         xxl:flex xxl:flex-col xxl:items-center
         xl:flex xl:flex-col xl:items-center
         sm:flex sm:flex-col sm:items-center">
         {data.map((item, index) => (
-          <div data-aos="fade-up" data-aos-duration="300" key={item.id} className={`flex flex-col items-center w-[25rem] mb-[4rem]`}>
-            <div className='bg-[#f1f2f4] h-[17rem] w-[25rem] flex items-center justify-center  rounded-[24px]'>
+          <div data-aos="fade-up" data-aos-duration="300" key={item.id} className={`flex flex-col items-center w-[25rem] mb-[4rem]
+          xl:w-fit
+          sm:w-fit`}>
+            <div className='bg-[#f1f2f4] h-[17rem] w-[25rem] flex items-center justify-center  rounded-[24px]
+              xl:w-fit
+              sm:w-fit'>
               <img src={item.image} alt={`Item ${item.id}`} className="mb-4 max-w-[70%] max-h-[70%]" />
             </div>
-            <h3 className={`font-bold font-[14px] py-[12px] px-[24px] rounded-[24px] text-[#2d2d2d] self-start mt-[1.5rem]`} style={{ backgroundColor: colors[index] }}>{item.title}</h3>
-            <p className="text-[#6b6b78] font-[16px] mt-[2rem]">{item.description}</p>
+            <div className='xxl:w-[60%] xl:w-[60%] sm:w-[60%]'>
+              <h3 className={`font-bold w-fit font-[14px] py-[12px] px-[24px] rounded-[24px] text-[#2d2d2d] self-start mt-[1.5rem]`} style={{ backgroundColor: colors[index] }}>{item.title}</h3>
+              <p className="text-[#6b6b78] font-[16px] mt-[2rem]">{item.description}</p>
+            </div>
           </div>
         ))}
       </div>

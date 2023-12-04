@@ -9,14 +9,12 @@ import Footer from "../../pages/footer/index"
 
 const index = () => {
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <div className='flex flex-col items-center justify-center w-[100%]'>
         <Introduction/>
         <MainFeatures/>
         <AdditionalFeatures/>
         <Reviews/>
-        <div>
         <Plans/>
-        </div>
         <Faq/>
         <Footer/>
     </div>

@@ -18,26 +18,26 @@ const Index = () => {
   }
 
   return (
-    <div data-aos="zoom-in-up" data-aos-duration="300" className="flex flex-col items-center justify-center mt-[10rem] mb-[5rem] w-[703px] 
-      xl:w-[600px] 
-      sm:w-[550px] font-plus-jakarta-sans">
+    <div data-aos="zoom-in-up" data-aos-duration="300" className="flex flex-col items-center justify-center mt-[10rem] mb-[5rem] w-[50%] 
+      xl:w-fit
+      sm:w-min font-plus-jakarta-sans">
       <h5 className="text-[16px] bg-[#F1F2F4] rounded-[100px] min-w-fit text-center font-bold py-[3px] px-[16px] 
         xl:text-[12px] 
         sm:text-[12px]">
         An other way to manage time
       </h5>
       <div className="leading-[5.5rem] 
-        xl:w-[16rem] xl:leading-[3rem] 
-        sm:w-[16rem] sm:leading-[3rem]">
+        xl:w-fit xl:leading-[3rem] 
+        sm:w-fit sm:leading-[3rem]">
         <h1 className="h1 text-[80px] block min-w-min font-extrabold text-center text-[#2e2e2e] 
           xl:text-[32px] 
-          sm:text-[32px]">
+          sm:text-[24px] sm:w-min"> 
           Your new favorite calendar <span className="text-[64px] xl:text-[32px] sm:text-[32px]">🗓️</span> app
         </h1>
       </div>
       <h6 className="text-[#6B6B78] text-[20px] font-thin text-center my-8 mx-[60px] min-w-min 
-        xl:text-[16px] xl:w-[20rem] 
-        sm:text-[16px] sm:w-[20rem]">
+        xl:text-[16px] xl:w-min
+        sm:text-[16px] sm:w-min">
         Here you should explain how cool your app is. Remember, focus on the
         benefits for your users, not on the features.
       </h6>

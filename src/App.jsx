@@ -14,7 +14,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className='bg-[#FEF9F6]'>
+    <div className='m-0 p-0 bg-[#FEF9F6]'>
       <Navbar/>
       <Homepage/>
     </div>

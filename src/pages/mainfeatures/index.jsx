@@ -10,19 +10,19 @@ const index = () => {
             xxl:w-[75%] 
             xl:w-[60%] 
             sm:w-[40%]" alt="" />
-        <div data-aos="fade-up" data-aos-duration="300" className='flex text-[16px] bg-[#F1F2F4] rounded-[100px] min-w-fit text-center font-bold py-[12px] px-[24px] gap-[10px]'>
+        <div data-aos="fade-up" data-aos-duration="300" className='flex text-[16px] bg-[#F1F2F4] rounded-[100px] min-w-fit text-center self-center font-bold py-[12px] px-[24px] gap-[10px]'>
             <h5 className="font-bold 
                 xl:text-[12px]
                 sm:text-[12px] " >Our main features 🦸🏼</h5>
         </div>
-        <h1 data-aos="fade-up" data-aos-duration="300" className='font-extrabold text-[56px] text-[#2e2e2e] 
+        <h1 data-aos="fade-up" data-aos-duration="300" className='font-extrabold text-[56px] text-[#2e2e2e] text-center self-center
             xl:text-[32px]
             sm:text-[24px] '>Discover your new superpowers</h1>
         
         <div className='w-[1200px] grid grid-cols-2 gap-[4rem] mt-[6rem]  
-            xxl:flex xxl:flex-col xxl:items-center xxl:justify-center 
-            xl:flex xl:flex-col xl:items-center xl:justify-center
-            sm:flex sm:flex-col sm:items-center sm:justify-center'>
+            xxl:flex xxl:flex-col xxl:items-center xxl:justify-center  xxl:w-fit
+            xl:flex xl:flex-col xl:items-center xl:justify-center xl:w-fit
+            sm:flex sm:flex-col sm:items-center sm:justify-center sm:w-fit'>
             <div className='w-[550px] sm:w-[300px]'>
                 <h5 data-aos="zoom-in-up" data-aos-duration="300" className="font-bold bg-[#fee9cb] text-[16px] text-[#2e2e2e] w-max py-[12px] px-[24px] rounded-[100px] place-self-center
                     xl:text-[12px]
@@ -60,9 +60,9 @@ const index = () => {
         </div>
 
         <div className='w-[1200px] grid grid-cols-2 font-plus-jakarta-sans mt-[13rem] 
-            xxl:flex xxl:flex-col-reverse xxl:items-center xxl:justify-center 
-            xl:flex xl:flex-col-reverse xl:items-center xl:justify-center
-            sm:flex sm:flex-col sm:items-center sm:justify-center'>
+            xxl:flex xxl:flex-col-reverse xxl:items-center xxl:justify-center xxl:w-fit
+            xl:flex xl:flex-col-reverse xl:items-center xl:justify-center xl:w-fit
+            sm:flex sm:flex-col-reverse sm:items-center sm:justify-center sm:w-fit'>
             <div className='flex items-center justify-center'>
                 <img data-aos="rotate-ac" data-aos-duration="300" src="https://framerusercontent.com/images/EgCwW6bpD4t2JQoyjgySRkUXc.png" 
                 className=" xxl:w-[50%] 
@@ -98,9 +98,9 @@ const index = () => {
         </div>
             
         <div className='w-[1200px] grid grid-cols-2 gap-[4rem] mt-[13rem] 
-            xxl:flex xxl:flex-col xxl:items-center xxl:justify-center 
-            xl:flex xl:flex-col xl:items-center xl:justify-center
-            sm:flex sm:flex-col sm:items-center sm:justify-center'>
+            xxl:flex xxl:flex-col xxl:items-center xxl:justify-center xxl:w-fit
+            xl:flex xl:flex-col xl:items-center xl:justify-center xl:w-fit
+            sm:flex sm:flex-col sm:items-center sm:justify-center sm:w-fit'>
             <div className='w-[550px] sm:w-[300px]'>
                 <h5 data-aos="zoom-in-up" data-aos-duration="300" className="font-bold bg-[#ddf4e4] text-[16px] text-[#2e2e2e] w-max py-[12px] px-[24px] rounded-[100px]
                     xl:text-[12px]
@@ -137,9 +137,9 @@ const index = () => {
         </div>
 
         <div className='w-[1200px] grid grid-cols-2 font-plus-jakarta-sans mt-[13rem] 
-            xxl:flex xxl:flex-col-reverse xxl:items-center xxl:justify-center 
-            xl:flex xl:flex-col-reverse xl:items-center xl:justify-center
-            sm:flex sm:flex-col-reverse sm:items-center sm:justify-center'>
+            xxl:flex xxl:flex-col-reverse xxl:items-center xxl:justify-center xxl:w-fit
+            xl:flex xl:flex-col-reverse xl:items-center xl:justify-center xl:w-fit
+            sm:flex sm:flex-col-reverse sm:items-center sm:justify-center sm:w-fit'>
             <div className='flex items-center justify-center'>
                 <img data-aos="rotate-ac"  data-aos-duration="300" src="https://framerusercontent.com/images/ow5cq9Ercs5KlWFqhMUsdUkCl8.png" 
                 className="xxl:w-[50%] 
